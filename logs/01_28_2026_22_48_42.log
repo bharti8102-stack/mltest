@@ -1,0 +1,12 @@
+[ 2026-01-28 22:48:44,059 ] 38 dotenv.main - WARNING - python-dotenv could not parse statement starting at line 6
+[ 2026-01-28 22:48:44,060 ] 9 root - INFO - \U0001f680 Application started
+[ 2026-01-28 22:48:44,060 ] 26 root - INFO - \U0001f680 Data ingestion started
+[ 2026-01-28 22:48:44,060 ] 19 root - INFO - Reading SQL Database started
+[ 2026-01-28 22:48:44,246 ] 32 root - INFO - Data fetched successfully | Rows=1000
+[ 2026-01-28 22:48:44,246 ] 30 root - INFO - Data read successfully from database
+[ 2026-01-28 22:48:44,251 ] 37 root - INFO - Raw data saved successfully
+[ 2026-01-28 22:48:44,257 ] 46 root - INFO - Train and test data saved successfully
+[ 2026-01-28 22:48:44,257 ] 47 root - INFO - \u2705 Data ingestion completed
+[ 2026-01-28 22:48:44,258 ] 15 root - INFO - \u2705 Data ingestion successful
+[ 2026-01-28 22:48:44,258 ] 16 root - INFO - Train data path: artifacts\train.csv
+[ 2026-01-28 22:48:44,258 ] 17 root - INFO - Test data path: artifacts\test.csv

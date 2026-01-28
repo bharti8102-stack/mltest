@@ -1,0 +1,7 @@
+[ 2026-01-28 22:36:42,345 ] 38 dotenv.main - WARNING - python-dotenv could not parse statement starting at line 6
+[ 2026-01-28 22:36:42,346 ] 9 root - INFO - \U0001f680 Application started
+[ 2026-01-28 22:36:42,346 ] 26 root - INFO - \U0001f680 Data ingestion started
+[ 2026-01-28 22:36:42,346 ] 20 root - INFO - Reading SQL Database started
+[ 2026-01-28 22:36:42,354 ] 35 root - INFO - Database connection established successfully
+[ 2026-01-28 22:36:42,361 ] 47 root - ERROR - Error occurred while reading SQL data: Execution failed on sql 'SELECT * FROM college': (1146, "Table 'college.college' doesn't exist")
+[ 2026-01-28 22:36:42,361 ] 22 root - ERROR - Error occurred in python script name [D:\mavim\mlproject\src\mlproject\utils.py] line number [39] error message [Execution failed on sql 'SELECT * FROM college': (1146, "Table 'college.college' doesn't exist")]

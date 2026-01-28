@@ -1,0 +1,6 @@
+[ 2026-01-28 22:32:14,244 ] 38 dotenv.main - WARNING - python-dotenv could not parse statement starting at line 6
+[ 2026-01-28 22:32:14,245 ] 8 root - INFO - The Execution has been Started
+[ 2026-01-28 22:32:14,245 ] 26 root - INFO - \U0001f680 Data ingestion started
+[ 2026-01-28 22:32:14,245 ] 20 root - INFO - Reading SQL Database started
+[ 2026-01-28 22:32:14,252 ] 35 root - INFO - Database connection established successfully
+[ 2026-01-28 22:32:14,259 ] 47 root - ERROR - Error occurred while reading SQL data: Execution failed on sql 'SELECT * FROM college': (1146, "Table 'college.college' doesn't exist")

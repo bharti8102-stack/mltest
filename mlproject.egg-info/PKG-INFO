@@ -5,6 +5,10 @@ Author: Bharti
 Author-email: bharti8102@gmail.com
 Requires-Dist: numpy
 Requires-Dist: pandas
+Requires-Dist: python-dotenv
+Requires-Dist: mysql-connector-python
+Requires-Dist: pymysql
+Requires-Dist: scikit-learn
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist

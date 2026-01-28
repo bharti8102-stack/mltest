@@ -1,0 +1,6 @@
+[ 2026-01-28 22:08:29,935 ] 38 dotenv.main - WARNING - python-dotenv could not parse statement starting at line 6
+[ 2026-01-28 22:08:29,936 ] 8 root - INFO - The Execution has been Started
+[ 2026-01-28 22:08:29,936 ] 28 root - INFO - Reading data from MySQL database
+[ 2026-01-28 22:08:29,936 ] 20 root - INFO - Reading SQL Database started
+[ 2026-01-28 22:08:29,946 ] 47 root - ERROR - Error occurred while reading SQL data: (1049, "Unknown database 'college_db'")
+[ 2026-01-28 22:08:29,946 ] 18 root - INFO - Custom Exception
