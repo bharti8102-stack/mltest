@@ -26,7 +26,8 @@ class DataIngestion:
             logging.info("🚀 Data ingestion started")
 
             # 1️⃣ Read data from MySQL
-            df = read_sql_data()
+            df = pd.read_csv(os.path.join('notebook', 'raw.csv'))
+        
             logging.info("Data read successfully from database")
 
             # 2️⃣ Create artifacts directory
