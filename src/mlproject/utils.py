@@ -1,6 +1,8 @@
 import os
 import sys
 import pandas as pd
+from sklearn.metrics import r2_score
+from sklearn.model_selection import GridSearchCV
 from sqlalchemy import create_engine
 from dotenv import load_dotenv, find_dotenv
 
@@ -54,4 +56,34 @@ def save_object(file_path, object):
         print(">>> Pickle save FAILED:", e)
         raise e
 
+def evaluate_models(X_train, y_train, X_test, y_test, models, params):
+    try:
+        report = {}
+        for i in range(len(list(models))):
+            model = list(models.values())[i]
+            param = list(params.values())[i]
+
+            # Hyperparameter tuning
+            gs = GridSearchCV(model, param, cv=3, n_jobs=-1)
+            gs.fit(X_train, y_train)
+
+            # Model prediction
+            y_pred = gs.predict(X_test)
+
+            # Calculate R2 score
+            r2 = r2_score(y_test, y_pred)
+            report[list(models.keys())[i]] = r2
+
+        return report
+
+    except Exception as e:
+        raise CustomException(e, sys)
+    
+    def Load_object(file_path):
+        try:
+            with open(file_path, "rb") as file_obj:
+                return pickle.load(file_obj)
+        except Exception as e:
+            raise CustomException(e,sys)
         
+            

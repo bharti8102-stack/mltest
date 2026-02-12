@@ -1,0 +1,13 @@
+[ 2026-02-12 13:00:46,212 ] 38 dotenv.main - WARNING - python-dotenv could not parse statement starting at line 6
+[ 2026-02-12 13:00:46,356 ] 14 root - INFO - \U0001f680 Application started
+[ 2026-02-12 13:00:46,356 ] 26 root - INFO - \U0001f680 Data ingestion started
+[ 2026-02-12 13:00:46,361 ] 31 root - INFO - Data read successfully from database
+[ 2026-02-12 13:00:46,366 ] 38 root - INFO - Raw data saved successfully
+[ 2026-02-12 13:00:46,375 ] 47 root - INFO - Train and test data saved successfully
+[ 2026-02-12 13:00:46,375 ] 48 root - INFO - \u2705 Data ingestion completed
+[ 2026-02-12 13:00:46,381 ] 68 root - INFO - Train and Test data loaded
+[ 2026-02-12 13:00:46,381 ] 48 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[ 2026-02-12 13:00:46,386 ] 49 root - INFO - Categorical Columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2026-02-12 13:00:46,409 ] 86 root - INFO - Saving preprocessing object
+[ 2026-02-12 13:00:46,411 ] 32 root - INFO - Splitting training and test input data
+[ 2026-02-12 13:00:46,412 ] 35 root - ERROR - Error occurred in python script name [D:\mavim\mlproject\src\mlproject\components\model_trainer.py] line number [64] error message [evaluate_models() got an unexpected keyword argument 'parameters']
