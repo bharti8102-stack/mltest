@@ -1,6 +1,7 @@
 import os
 import sys
 from dataclasses import dataclass
+from urllib.parse import urlparse
  
 from sklearn.ensemble import (
      RandomForestClassifier,
@@ -66,6 +67,35 @@ class ModelTrainer:
             best_model_name=list(model_report.keys())[list(model_report.values()).index(best_model_score)]
             best_model=models[best_model_name]
             
+            print("This is the best model:",best_model_name)
+            model_names = list(params.keys())
+            
+            actual_model=""
+            
+            for model in model_names:
+                if model in best_model_name:
+                    actual_model = actual_model + model
+                    break
+                best_params = params[actual_model]
+                mlflow.set_registry_uri("https://dagshub.com/bharti8102/mltest.mlflow")
+                tracking_uri = urlparse(mlflow.get_tracking_uri().scheme)
+                
+                #mlflow
+                 
+            with mlflow.start_run():
+                
+                predicted = best_model.predict(X_test)
+                rmse, mae, r2 = evaluate_model(y_test, predicted)
+                mlflow.log_params(best_params)
+                mlflow.log_metric("rmse", rmse)
+                mlflow.log_metric("mae", mae)
+                mlflow.log_metric("r2", r2)
+            
+            if tracking_url_type_store != "file":
+                mlflow.sklearn.log_model(best_model, "model", registered_model_name=actual_model)
+            else:
+                mlflow.sklearn.log_model(best_model, "model")
+                
             if best_model_score<0.6:
                 raise CustomException("No best model found")
             logging.info(f"Best found model on both training and testing dataset is {best_model_name} with r2 score: {best_model_score}")
