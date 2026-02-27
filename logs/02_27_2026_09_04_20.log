@@ -1,0 +1,23 @@
+[ 2026-02-27 09:04:23,468 ] 38 dotenv.main - WARNING - python-dotenv could not parse statement starting at line 6
+[ 2026-02-27 09:04:27,502 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-02-27 09:04:27,508 ] 107 dagshub - INFO - Accessing as bharti8102
+[ 2026-02-27 09:04:28,842 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/bharti8102/mltest "HTTP/1.1 200 OK"
+[ 2026-02-27 09:04:30,178 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-02-27 09:04:30,181 ] 107 dagshub - INFO - Initialized MLflow to track repo "bharti8102/mltest"
+[ 2026-02-27 09:04:30,182 ] 107 dagshub - INFO - Repository bharti8102/mltest initialized!
+[ 2026-02-27 09:04:32,990 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/bharti8102/mltest "HTTP/1.1 200 OK"
+[ 2026-02-27 09:04:32,994 ] 107 dagshub - INFO - Initialized MLflow to track repo "bharti8102/mltest"
+[ 2026-02-27 09:04:32,995 ] 107 dagshub - INFO - Repository bharti8102/mltest initialized!
+[ 2026-02-27 09:04:33,306 ] 22 root - INFO - \U0001f680 Application started
+[ 2026-02-27 09:04:33,307 ] 26 root - INFO - \U0001f680 Data ingestion started
+[ 2026-02-27 09:04:33,312 ] 31 root - INFO - Data read successfully from database
+[ 2026-02-27 09:04:33,318 ] 38 root - INFO - Raw data saved successfully
+[ 2026-02-27 09:04:33,337 ] 47 root - INFO - Train and test data saved successfully
+[ 2026-02-27 09:04:33,337 ] 48 root - INFO - \u2705 Data ingestion completed
+[ 2026-02-27 09:04:33,345 ] 68 root - INFO - Train and Test data loaded
+[ 2026-02-27 09:04:33,345 ] 48 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[ 2026-02-27 09:04:33,345 ] 49 root - INFO - Categorical Columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[ 2026-02-27 09:04:33,370 ] 86 root - INFO - Saving preprocessing object
+[ 2026-02-27 09:04:33,373 ] 50 root - INFO - Splitting training and test input data
+[ 2026-02-27 09:06:11,529 ] 103 root - INFO - Best model found: Linear Regression
+[ 2026-02-27 09:06:25,618 ] 40 root - INFO - \u2705 Pipeline completed successfully
